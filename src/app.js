@@ -130,7 +130,7 @@ function Navbar() {
       e(
         "button",
         {
-          className: "grid h-11 w-11 place-items-center rounded-full border border-slate-200 text-rotary-ink lg:hidden",
+          className: `grid h-11 w-11 place-items-center rounded-full border ${scrolled ? "text-rotary-ink border-rotary-ink" : "text-white border-slate-200"}  lg:hidden`,
           onClick: () => setOpen(true),
           "aria-label": "Open navigation menu",
         },
@@ -156,7 +156,7 @@ function Navbar() {
               animate: { x: 0 },
               exit: { x: "100%" },
               transition: { type: "spring", damping: 28, stiffness: 260 },
-              className: "ml-auto min-h-screen w-[86vw] max-w-sm bg-white p-5 shadow-soft",
+              className: `ml-auto min-h-screen w-[86vw] max-w-sm ${scrolled ? "bg-white" : "bg-slate-400"}  p-5 shadow-soft`,
             },
             e(
               "div",
@@ -165,7 +165,7 @@ function Navbar() {
               e("button", { className: "grid h-11 w-11 place-items-center rounded-full bg-rotary-mist", onClick: () => setOpen(false), "aria-label": "Close navigation menu" }, Icon({ name: "close" }))
             ),
             e("div", { className: "grid gap-2" }, links),
-            e("div", { className: "mt-8 grid gap-3" }, Button({ href: "#membership", variant: "blue", children: "Join Us" }), Button({ href: "#donate", variant: "primary", children: "Donate" }))
+            e("div", { className: "mt-8 grid gap-3" }, Button({ href: "#membership", variant: "blue", children: "Join Us" }))
           )
         )
     )
@@ -273,22 +273,22 @@ function Team() {
               e("h3", { className: "mt-5 text-xl font-black" }, name),
               e("p", { className: "font-bold text-rotary-blue" }, role),
               e("p", { className: "mt-3 text-sm leading-6 text-slate-600" }, bio),
-              e(
-                "div",
-                { className: "mt-4 flex justify-center gap-2" },
-                ["in", "x", "m"].map((s) =>
-                  e(
-                    "a",
-                    {
-                      key: s,
-                      href: "#",
-                      className: "grid h-9 w-9 place-items-center rounded-full bg-rotary-mist text-xs font-black text-rotary-blue",
-                      "aria-label": `${name} social link`,
-                    },
-                    s
-                  )
-                )
-              )
+              // e(
+              //   "div",
+              //   { className: "mt-4 flex justify-center gap-2" },
+              //   ["in", "x", "m"].map((s) =>
+              //     e(
+              //       "a",
+              //       {
+              //         key: s,
+              //         href: "#",
+              //         className: "grid h-9 w-9 place-items-center rounded-full bg-rotary-mist text-xs font-black text-rotary-blue",
+              //         "aria-label": `${name} social link`,
+              //       },
+              //       s
+              //     )
+              //   )
+              // )
             )
           )
         )
@@ -440,7 +440,7 @@ function Stories() {
 }
 
 function Footer() {
-  return e("footer", { className: "bg-rotary-ink px-4 py-12 text-white sm:px-6 lg:px-8" }, e("div", { className: "mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.2fr_0.8fr_0.8fr]" }, e("div", null, e("h2", { className: "text-2xl font-black" }, "Rotary Club New Charter"), e("p", { className: "mt-4 max-w-lg leading-7 text-white/70" }, "Meeting weekly online and in person to advance fellowship, leadership, and community impact."), e("form", { className: "mt-6 flex max-w-md gap-2", onSubmit: (event) => event.preventDefault() },)), e("div", null, e("h3", { className: "font-black" }, "Contact"), e("p", { className: "mt-4 leading-7 text-white/70" }, "Lagos, Nigeria", e("br"), "hello@rotaryclub.example", e("br"), "+234 000 000 0000")), e("div", null, e("h3", { className: "font-black" }, "Explore"), e("div", { className: "mt-4 grid gap-2" }, navItems.slice(1).map(([label, id]) => e("a", { key: id, href: `#${id}`, className: "text-white/70 hover:text-white" }, label))))), e("div", { className: "mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/55" }, `Copyright ${new Date().getFullYear()} Rotary Club New Charter. Rotary references are placeholders for MVP presentation.`));
+  return e("footer", { className: "bg-rotary-ink px-4 py-12 text-white sm:px-6 lg:px-8" }, e("div", { className: "mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.2fr_0.8fr_0.8fr]" }, e("div", null, e("h2", { className: "text-2xl font-black" }, "Rotary eClub Of Connected Minds"), e("p", { className: "mt-4 max-w-lg leading-7 text-white/70" }, "Meeting weekly online to advance fellowship, leadership, and community impact."), e("form", { className: "mt-6 flex max-w-md gap-2", onSubmit: (event) => event.preventDefault() },)), e("div", null, e("h3", { className: "font-black" }, "Contact"), e("p", { className: "mt-4 leading-7 text-white/70" }, "Worldwide", e("br"), "hello@rotaryclub.example", e("br"), "+234 000 000 0000")), e("div", null, e("h3", { className: "font-black" }, "Explore"), e("div", { className: "mt-4 grid gap-2" }, navItems.slice(1).map(([label, id]) => e("a", { key: id, href: `#${id}`, className: "text-white/70 hover:text-white" }, label))))), e("div", { className: "mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/55" }, `Copyright ${new Date().getFullYear()} Rotary eClub Of Connected Minds. Designed and built by Oluwatimilehin Rotimi.`));
 }
 
 function ScrollTop() {
