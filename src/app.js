@@ -10,7 +10,7 @@ const navItems = [
   ["Projects", "projects"],
   ["Events", "events"],
   ["Membership", "membership"],
-  ["Donate", "donate"],
+  // ["Donate", "donate"],
   ["Stories", "stories"],
 ];
 
@@ -185,7 +185,10 @@ function Hero() {
         e("p", { className: "mb-4 inline-flex w-fit rounded-full border border-white/35 bg-white/12 px-4 py-2 text-sm font-bold backdrop-blur" }, "Newly chartered. Purpose built for impact."),
         e("h1", { className: "fluid-title max-w-5xl font-black" }, "Service Above Self — Building Communities, Creating Impact"),
         e("p", { className: "mt-5 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl" }, "A leadership-centered Rotary Club mobilizing professionals, partners, and neighbors to solve real community challenges with dignity, fellowship, and measurable service."),
-        e("div", { className: "mt-7 flex flex-col gap-3 sm:flex-row" }, Button({ href: "#membership", children: "Join Us" }), Button({ href: "#events", variant: "secondary", children: "Attend a Meeting" }), Button({ href: "#donate", variant: "outline", children: "Donate" }))
+        e("div", { className: "mt-7 flex flex-col gap-3 sm:flex-row" }, Button({ href: "#membership", children: "Join Us" }), 
+        // Button({ href: "#events", variant: "secondary", children: "Attend a Meeting" }), 
+        // Button({ href: "#donate", variant: "outline", children: "Donate" })
+        )
       ),
       e(
         "div",
@@ -389,42 +392,42 @@ function Membership() {
   );
 }
 
-function Donate() {
-  const packages = [["Friend", "$50", "Supplies one child with school essentials."], ["Builder", "$250", "Sponsors outreach logistics and volunteer materials."], ["Partner", "$1,000+", "Funds signature projects with recognition and reporting."]];
-  return e(
-    "section",
-    { id: "donate", className: "section-pad bg-rotary-blue px-4 text-white sm:px-6 lg:px-8" },
-    e(
-      "div",
-      { className: "mx-auto max-w-7xl" },
-      e(SectionHeading, {
-        eyebrow: "Donations & partnerships",
-        title: "Transparent giving for measurable community impact.",
-        copy: "Donation and sponsorship packages make it clear how support becomes service.",
-        align: "center",
-      }),
-      e(
-        "div",
-        { className: "grid gap-5 md:grid-cols-3" },
-        packages.map(([name, price, copy]) =>
-          e(
-            "article",
-            { key: name, className: "rounded-2xl bg-white p-6 text-rotary-ink shadow-soft" },
-            e("h3", { className: "text-2xl font-black" }, name),
-            e("p", { className: "mt-3 text-4xl font-black text-rotary-blue" }, price),
-            e("p", { className: "mt-4 leading-7 text-slate-600" }, copy),
-            Button({ href: "#", variant: "primary", children: name === "Partner" ? "Become a Partner" : "Donate Now" })
-          )
-        )
-      ),
-      e(
-        "div",
-        { className: "mt-8 rounded-2xl border border-white/20 p-6 text-center" },
-        e("p", { className: "font-bold text-white/85" }, "Corporate partners, NGOs, schools, hospitals, and civic institutions can collaborate on targeted service programs.")
-      )
-    )
-  );
-}
+// function Donate() {
+//   const packages = [["Friend", "$50", "Supplies one child with school essentials."], ["Builder", "$250", "Sponsors outreach logistics and volunteer materials."], ["Partner", "$1,000+", "Funds signature projects with recognition and reporting."]];
+//   return e(
+//     "section",
+//     { id: "donate", className: "section-pad bg-rotary-blue px-4 text-white sm:px-6 lg:px-8" },
+//     e(
+//       "div",
+//       { className: "mx-auto max-w-7xl" },
+//       e(SectionHeading, {
+//         eyebrow: "Donations & partnerships",
+//         title: "Transparent giving for measurable community impact.",
+//         copy: "Donation and sponsorship packages make it clear how support becomes service.",
+//         align: "center",
+//       }),
+//       e(
+//         "div",
+//         { className: "grid gap-5 md:grid-cols-3" },
+//         packages.map(([name, price, copy]) =>
+//           e(
+//             "article",
+//             { key: name, className: "rounded-2xl bg-white p-6 text-rotary-ink shadow-soft" },
+//             e("h3", { className: "text-2xl font-black" }, name),
+//             e("p", { className: "mt-3 text-4xl font-black text-rotary-blue" }, price),
+//             e("p", { className: "mt-4 leading-7 text-slate-600" }, copy),
+//             Button({ href: "#", variant: "primary", children: name === "Partner" ? "Become a Partner" : "Donate Now" })
+//           )
+//         )
+//       ),
+//       e(
+//         "div",
+//         { className: "mt-8 rounded-2xl border border-white/20 p-6 text-center" },
+//         e("p", { className: "font-bold text-white/85" }, "Corporate partners, NGOs, schools, hospitals, and civic institutions can collaborate on targeted service programs.")
+//       )
+//     )
+//   );
+// }
 
 function Stories() {
   const stories = [
@@ -468,7 +471,7 @@ function App() {
     return () => script.remove();
   }, [jsonLd]);
 
-  return e(React.Fragment, null, e(Navbar), e("main", null, e(Hero), e(About), e(Team), e(Projects), e(Events), e(Membership), e(Donate), e(Stories)), e(Footer), e(ScrollTop));
+  return e(React.Fragment, null, e(Navbar), e("main", null, e(Hero), e(About), e(Team), e(Projects), e(Events), e(Membership), e(Stories)), e(Footer), e(ScrollTop));
 }
 
 createRoot(document.getElementById("root")).render(e(App));
