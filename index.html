@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern Rotary Club website for service leaders, community projects, membership, events, donations, and impact storytelling."
+    />
+    <meta name="theme-color" content="#005DAA" />
+    <title>Rotary Club | Service Above Self</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              rotary: {
+                blue: "#005DAA",
+                deep: "#073763",
+                gold: "#F7A81B",
+                ink: "#11243A",
+                mist: "#F3F7FB",
+              },
+            },
+            boxShadow: {
+              soft: "0 18px 60px rgba(8, 35, 61, 0.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
