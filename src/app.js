@@ -355,7 +355,7 @@ function Projects() {
               e("span", { className: "rounded-full bg-rotary-gold/20 px-3 py-1 text-xs font-black text-rotary-ink" }, cat),
               e("h3", { className: "mt-4 text-xl font-black" }, title),
               e("p", { className: "mt-3 leading-7 text-slate-600" }, copy),
-              e("a", { href: "#donate", className: "mt-5 inline-flex font-black text-rotary-blue" }, "Support this project")
+              // e("a", { href: "#donate", className: "mt-5 inline-flex font-black text-rotary-blue" }, "Support this project")
             )
           )
         )
@@ -436,7 +436,7 @@ function Stories() {
     ["Youth", "Mentorship circles for emerging leaders", "Preparing young people with practical leadership habits."],
     ["Impact", "What transparent reporting builds", "Trust grows when communities can see the work clearly."],
   ];
-  return e("section", { id: "stories", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" }, e("div", { className: "mx-auto max-w-7xl" }, e(SectionHeading, { eyebrow: "News & stories", title: "Human-centered updates that make the club feel alive.", copy: "A responsive masonry-style story grid supports member spotlights, project reports, and community news." }), e("div", { className: "masonry" }, stories.map(([cat, title, copy], i) => e("article", { key: title, className: "overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft" }, e("img", { src: `https://images.unsplash.com/photo-${["1517048676732-d65bc937f952", "1556761175-b413da4baf72", "1529156069898-49953e39b3ac", "1551836022-d5d88e9218df"][i]}?auto=format&fit=crop&w=800&q=80`, alt: title, className: `w-full object-cover ${i % 2 ? "h-56" : "h-72"}`, loading: "lazy" }), e("div", { className: "p-5" }, e("span", { className: "text-xs font-black uppercase tracking-[0.18em] text-rotary-blue" }, cat), e("h3", { className: "mt-3 text-xl font-black" }, title), e("p", { className: "mt-3 leading-7 text-slate-600" }, copy), e("a", { href: "#", className: "mt-5 inline-flex font-black text-rotary-blue" }, "Read more")))))));
+  return e("section", { id: "stories", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" }, e("div", { className: "mx-auto max-w-7xl" }, e(SectionHeading, { eyebrow: "News & stories", title: "Human-centered updates that make the club feel alive.", copy: "A responsive masonry-style story grid supports member spotlights, project reports, and community news." }), e("div", { className: "masonry" }, stories.map(([cat, title, copy], i) => e("article", { key: title, className: "overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft" }, e("img", { src: `https://images.unsplash.com/photo-${["1517048676732-d65bc937f952", "1556761175-b413da4baf72", "1529156069898-49953e39b3ac", "1551836022-d5d88e9218df"][i]}?auto=format&fit=crop&w=800&q=80`, alt: title, className: `w-full object-cover ${i % 2 ? "h-56" : "h-72"}`, loading: "lazy" }), e("div", { className: "p-5" }, e("span", { className: "text-xs font-black uppercase tracking-[0.18em] text-rotary-blue" }, cat), e("h3", { className: "mt-3 text-xl font-black" }, title), e("p", { className: "mt-3 leading-7 text-slate-600" }, copy), e("a", { href: "#", className: "mt-5 inline-flex font-black text-rotary-blue" })))))));
 }
 
 function Footer() {
