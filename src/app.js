@@ -105,7 +105,7 @@ function Navbar() {
         key: id,
         href: `#${id}`,
         onClick: () => setOpen(false),
-        className: "rounded-full px-3 py-2 text-sm font-bold text-slate-700 transition hover:bg-rotary-mist hover:text-rotary-blue",
+        className: `rounded-full px-3 py-2 text-sm font-bold ${scrolled ? "black" : "text-white"} transition hover:bg-rotary-mist hover:text-rotary-blue`,
       },
       label
     )
@@ -123,7 +123,7 @@ function Navbar() {
         "a",
         { href: "#home", className: "flex items-center gap-3 font-black text-rotary-ink" },
         e("span", { className: "grid h-11 w-11 place-items-center rounded-full bg-rotary-blue text-white shadow-soft" }, "RC"),
-        e("span", { className: "leading-tight" }, "Rotary Club", e("span", { className: "block text-xs font-extrabold uppercase tracking-[0.22em] text-rotary-blue" }, "New Charter"))
+        e("span", { className: `leading-tight ${scrolled ? "" : "text-white"}` }, "Rotary eClub Of", e("span", { className: `block text-xs font-extrabold uppercase tracking-[0.22em] text-rotary-blue ${scrolled ? "" : "text-white"}` }, "Collected Minds"))
       ),
       e("div", { className: "hidden items-center gap-1 lg:flex" }, links),
       e("div", { className: "hidden items-center gap-3 lg:flex" }, Button({ href: "#membership", variant: "blue", icon: null, children: "Join Us" })),
