@@ -512,17 +512,17 @@ function About() {
 function Team() {
   const people = [
     [
-      "Amara Okafor",
+      "Rtn Adebayo Taofeek Akande",
       "President",
       "Strategy leader focused on partnerships, governance, and measurable community transformation.",
     ],
     [
-      "Tunde Adeyemi",
+      "Rtn Amiomode Patience Ogunleye",
       "Secretary",
       "Operations builder keeping meetings, records, and member communications crisp and dependable.",
     ],
     [
-      "Nkechi Bello",
+      "Rtn Itunu Adesola Adeyemi",
       "Treasurer",
       "Finance professional championing transparent stewardship and donor confidence.",
     ],
@@ -558,8 +558,8 @@ function Team() {
                   "mx-auto h-28 w-28 rounded-full object-cover ring-4 ring-[#f7a81b]",
                 src: `https://images.unsplash.com/photo-${
                   [
-                    "1494790108377-be9c29b29330",
                     "1500648767791-00dcc994a43e",
+                    "1494790108377-be9c29b29330",
                     "1544005313-94ddf0286df2",
                     "1507003211169-0a1dd7228f2d",
                   ][i]
