@@ -172,29 +172,140 @@ function Navbar() {
   );
 }
 
+// function Hero() {
+//   return e(
+//     "section",
+//     { id: "home", className: "hero-image relative min-h-[92svh] overflow-hidden pt-24 text-white" },
+//     e(
+//       "div",
+//       { className: "mx-auto grid min-h-[calc(92svh-6rem)] max-w-7xl content-end gap-8 px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12" },
+//       e(
+//         Reveal,
+//         null,
+//         e("p", { className: "mb-4 inline-flex w-fit rounded-full border border-white/35 bg-white/12 px-4 py-2 text-sm font-bold backdrop-blur" }, "Newly chartered. Purpose built for impact."),
+//         e("h1", { className: "fluid-title max-w-5xl font-black" }, "Service Above Self — Building Communities, Creating Impact"),
+//         e("p", { className: "mt-5 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl" }, "A leadership-centered Rotary Club mobilizing professionals, partners, and neighbors to solve real community challenges with dignity, fellowship, and measurable service."),
+//         e("div", { className: "mt-7 flex flex-col gap-3 sm:flex-row" }, Button({ href: "#membership", children: "Join Us" }), 
+//         // Button({ href: "#events", variant: "secondary", children: "Attend a Meeting" }), 
+//         // Button({ href: "#donate", variant: "outline", children: "Donate" })
+//         )
+//       ),
+//       e(
+//         "div",
+//         { className: "glass grid gap-3 rounded-2xl p-4 text-rotary-ink shadow-soft sm:grid-cols-3 lg:max-w-3xl" },
+//         ["Weekly Fellowships", "Transparent Projects", "Youth Leadership"].map((item) =>
+//           e("div", { key: item, className: "rounded-xl bg-white p-4" }, e("p", { className: "text-sm font-black" }, item), e("p", { className: "mt-1 text-sm text-slate-600" }, "Designed for service-minded people ready to lead."))
+//         )
+//       )
+//     )
+//   );
+// }
+
 function Hero() {
+  const highlights = [
+    {
+      title: "Weekly Fellowships",
+      description:
+        "Designed for service-minded people ready to lead.",
+    },
+    {
+      title: "Transparent Projects",
+      description:
+        "Built on accountability, visibility, and measurable community impact.",
+    },
+    {
+      title: "Youth Leadership",
+      description:
+        "Empowering the next generation of leaders through mentorship, service, and growth opportunities.",
+    },
+  ];
+
   return e(
     "section",
-    { id: "home", className: "hero-image relative min-h-[92svh] overflow-hidden pt-24 text-white" },
+    {
+      id: "home",
+      className:
+        "hero-image relative min-h-[92svh] overflow-hidden pt-24 text-white",
+    },
+
     e(
       "div",
-      { className: "mx-auto grid min-h-[calc(92svh-6rem)] max-w-7xl content-end gap-8 px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12" },
+      {
+        className:
+          "mx-auto grid min-h-[calc(92svh-6rem)] max-w-7xl content-end gap-8 px-4 pb-8 sm:px-6 lg:px-8 lg:pb-12",
+      },
+
       e(
         Reveal,
         null,
-        e("p", { className: "mb-4 inline-flex w-fit rounded-full border border-white/35 bg-white/12 px-4 py-2 text-sm font-bold backdrop-blur" }, "Newly chartered. Purpose built for impact."),
-        e("h1", { className: "fluid-title max-w-5xl font-black" }, "Service Above Self — Building Communities, Creating Impact"),
-        e("p", { className: "mt-5 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl" }, "A leadership-centered Rotary Club mobilizing professionals, partners, and neighbors to solve real community challenges with dignity, fellowship, and measurable service."),
-        e("div", { className: "mt-7 flex flex-col gap-3 sm:flex-row" }, Button({ href: "#membership", children: "Join Us" }), 
-        // Button({ href: "#events", variant: "secondary", children: "Attend a Meeting" }), 
-        // Button({ href: "#donate", variant: "outline", children: "Donate" })
+
+        e(
+          "p",
+          {
+            className:
+              "mb-4 inline-flex w-fit rounded-full border border-white/35 bg-white/12 px-4 py-2 text-sm font-bold backdrop-blur",
+          },
+          "Newly chartered. Purpose built for impact."
+        ),
+
+        e(
+          "h1",
+          { className: "fluid-title max-w-5xl font-black" },
+          "Service Above Self — Building Communities, Creating Impact"
+        ),
+
+        e(
+          "p",
+          {
+            className:
+              "mt-5 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl",
+          },
+          "A leadership-centered Rotary Club mobilizing professionals, partners, and neighbors to solve real community challenges with dignity, fellowship, and measurable service."
+        ),
+
+        e(
+          "div",
+          { className: "mt-7 flex flex-col gap-3 sm:flex-row" },
+
+          Button({
+            href: "#membership",
+            children: "Join Us",
+          })
+
+          // Button({ href: "#events", variant: "secondary", children: "Attend a Meeting" }),
+          // Button({ href: "#donate", variant: "outline", children: "Donate" })
         )
       ),
+
       e(
         "div",
-        { className: "glass grid gap-3 rounded-2xl p-4 text-rotary-ink shadow-soft sm:grid-cols-3 lg:max-w-3xl" },
-        ["Weekly Fellowships", "Transparent Projects", "Youth Leadership"].map((item) =>
-          e("div", { key: item, className: "rounded-xl bg-white p-4" }, e("p", { className: "text-sm font-black" }, item), e("p", { className: "mt-1 text-sm text-slate-600" }, "Designed for service-minded people ready to lead."))
+        {
+          className:
+            "glass grid gap-3 rounded-2xl p-4 text-rotary-ink shadow-soft sm:grid-cols-3 lg:max-w-3xl",
+        },
+
+        highlights.map((item) =>
+          e(
+            "div",
+            {
+              key: item.title,
+              className: "rounded-xl bg-white p-4",
+            },
+
+            e(
+              "p",
+              { className: "text-sm font-black" },
+              item.title
+            ),
+
+            e(
+              "p",
+              {
+                className: "mt-1 text-sm text-slate-600",
+              },
+              item.description
+            )
+          )
         )
       )
     )
@@ -252,7 +363,7 @@ function Team() {
       e(SectionHeading, {
         eyebrow: "Leadership",
         title: "Credible leaders, approachable stewards.",
-        copy: "Profiles can be connected later to a CMS or member dashboard while the MVP keeps the presentation polished and trustworthy.",
+        copy: "Our leadership team combines deep expertise with a people-first mindset, guiding the organization with integrity, transparency, and purpose. As approachable stewards, they foster trust, empower collaboration, and lead with a clear commitment to sustainable growth and shared success.",
       }),
       e(
         "div",
@@ -366,9 +477,9 @@ function Projects() {
 
 function Events() {
   const events = [
-    ["24", "May", "Charter Fellowship & Induction", "Hybrid", "Saturday, 10:00 AM"],
+    ["24", "May", "Charter Fellowship & Induction", "Virtual", "Saturday, 10:00 AM"],
     ["31", "May", "Health Outreach Planning Session", "Virtual", "Saturday, 6:00 PM"],
-    ["07", "Jun", "Community Service Day", "Physical", "Saturday, 8:30 AM"],
+    ["07", "Jun", "Community Service Day", "Virtual", "Saturday, 8:30 AM"],
   ];
   return e(
     "section",
@@ -377,17 +488,171 @@ function Events() {
   );
 }
 
+// function Membership() {
+//   const [open, setOpen] = useState(0);
+//   const faqs = ["Do I need previous Rotary experience?", "How often does the club meet?", "Can busy professionals join?", "Are corporate memberships available?"];
+//   return e(
+//     "section",
+//     { id: "membership", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" },
+//     e(
+//       "div",
+//       { className: "mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]" },
+//       e("div", null, e(SectionHeading, { eyebrow: "Membership", title: "Join leaders creating lasting change.", copy: "A conversion-focused membership experience with benefits, process, testimonials, FAQ, and application form." }), e("div", { className: "grid gap-4" }, ["Attend an open fellowship", "Meet the membership committee", "Choose a service area", "Complete onboarding and induction"].map((step, i) => e("div", { key: step, className: "flex gap-4 rounded-2xl border border-slate-100 p-4" }, e("span", { className: "font-black text-rotary-blue" }, `0${i + 1}`), e("strong", null, step))))),
+//       e("div", { className: "rounded-2xl bg-rotary-mist p-5 sm:p-8" }, e("form", { className: "grid gap-4", onSubmit: (event) => event.preventDefault() }, ["Full name", "Email address", "Profession or organization"].map((label) => e("label", { key: label, className: "grid gap-2 text-sm font-bold" }, label, e("input", { className: "min-h-12 rounded-xl border border-slate-200 px-4", placeholder: label }))), e("label", { className: "grid gap-2 text-sm font-bold" }, "Why do you want to join?", e("textarea", { className: "min-h-28 rounded-xl border border-slate-200 p-4", placeholder: "Tell us about your service interests." })), e("button", { className: "min-h-12 rounded-full bg-rotary-blue px-5 font-black text-white" }, "Submit Interest Form")), e("div", { className: "mt-8 grid gap-3" }, faqs.map((q, i) => e("div", { key: q, className: "rounded-xl bg-white" }, e("button", { className: "flex w-full items-center justify-between p-4 text-left font-black", onClick: () => setOpen(open === i ? -1 : i), "aria-expanded": open === i }, q, e("span", null, open === i ? "-" : "+")), open === i && e("p", { className: "px-4 pb-4 leading-7 text-slate-600" }, "No, you don’t need previous Rotary experience — we welcome individuals from all backgrounds who are passionate about service, leadership, and making a positive impact in the community.")))))
+//     )
+//   );
+// }
+
 function Membership() {
   const [open, setOpen] = useState(0);
-  const faqs = ["Do I need previous Rotary experience?", "How often does the club meet?", "Can busy professionals join?", "Are corporate memberships available?"];
+
+  const faqs = [
+    {
+      question: "Do I need previous Rotary experience?",
+      answer:
+        "No, you don’t need previous Rotary experience — we welcome individuals from all backgrounds who are passionate about service, leadership, and making a positive impact in the community.",
+    },
+    {
+      question: "How often does the club meet?",
+      answer:
+        "The club meets three times a month for fellowship, networking, and service activities, with schedules designed to accommodate professionals and business leaders.",
+    },
+    {
+      question: "Can busy professionals join?",
+      answer:
+        "Absolutely. Our club is structured to provide flexible opportunities for engagement while respecting the demands of professional and personal commitments.",
+    },
+    {
+      question: "Are corporate memberships available?",
+      answer:
+        "Yes, we offer corporate membership options that allow organizations to engage employees in leadership, networking, and community impact initiatives.",
+    },
+  ];
+
   return e(
     "section",
     { id: "membership", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" },
     e(
       "div",
       { className: "mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr]" },
-      e("div", null, e(SectionHeading, { eyebrow: "Membership", title: "Join leaders creating lasting change.", copy: "A conversion-focused membership experience with benefits, process, testimonials, FAQ, and application form." }), e("div", { className: "grid gap-4" }, ["Attend an open fellowship", "Meet the membership committee", "Choose a service area", "Complete onboarding and induction"].map((step, i) => e("div", { key: step, className: "flex gap-4 rounded-2xl border border-slate-100 p-4" }, e("span", { className: "font-black text-rotary-blue" }, `0${i + 1}`), e("strong", null, step))))),
-      e("div", { className: "rounded-2xl bg-rotary-mist p-5 sm:p-8" }, e("form", { className: "grid gap-4", onSubmit: (event) => event.preventDefault() }, ["Full name", "Email address", "Profession or organization"].map((label) => e("label", { key: label, className: "grid gap-2 text-sm font-bold" }, label, e("input", { className: "min-h-12 rounded-xl border border-slate-200 px-4", placeholder: label }))), e("label", { className: "grid gap-2 text-sm font-bold" }, "Why do you want to join?", e("textarea", { className: "min-h-28 rounded-xl border border-slate-200 p-4", placeholder: "Tell us about your service interests." })), e("button", { className: "min-h-12 rounded-full bg-rotary-blue px-5 font-black text-white" }, "Submit Interest Form")), e("div", { className: "mt-8 grid gap-3" }, faqs.map((q, i) => e("div", { key: q, className: "rounded-xl bg-white" }, e("button", { className: "flex w-full items-center justify-between p-4 text-left font-black", onClick: () => setOpen(open === i ? -1 : i), "aria-expanded": open === i }, q, e("span", null, open === i ? "-" : "+")), open === i && e("p", { className: "px-4 pb-4 leading-7 text-slate-600" }, "Yes. The club is designed to welcome committed people, explain expectations clearly, and make participation practical.")))))
+
+      e(
+        "div",
+        null,
+        e(SectionHeading, {
+          eyebrow: "Membership",
+          title: "Join leaders creating lasting change.",
+          copy:
+            "A conversion-focused membership experience with benefits, process, testimonials, FAQ, and application form.",
+        }),
+
+        e(
+          "div",
+          { className: "grid gap-4" },
+          [
+            "Attend an open fellowship",
+            "Meet the membership committee",
+            "Choose a service area",
+            "Complete onboarding and induction",
+          ].map((step, i) =>
+            e(
+              "div",
+              {
+                key: step,
+                className: "flex gap-4 rounded-2xl border border-slate-100 p-4",
+              },
+              e(
+                "span",
+                { className: "font-black text-rotary-blue" },
+                `0${i + 1}`
+              ),
+              e("strong", null, step)
+            )
+          )
+        )
+      ),
+
+      e(
+        "div",
+        { className: "rounded-2xl bg-rotary-mist p-5 sm:p-8" },
+
+        e(
+          "form",
+          {
+            className: "grid gap-4",
+            onSubmit: (event) => event.preventDefault(),
+          },
+
+          ["Full name", "Email address", "Profession or organization"].map(
+            (label) =>
+              e(
+                "label",
+                { key: label, className: "grid gap-2 text-sm font-bold" },
+                label,
+                e("input", {
+                  className:
+                    "min-h-12 rounded-xl border border-slate-200 px-4",
+                  placeholder: label,
+                })
+              )
+          ),
+
+          e(
+            "label",
+            { className: "grid gap-2 text-sm font-bold" },
+            "Why do you want to join?",
+            e("textarea", {
+              className: "min-h-28 rounded-xl border border-slate-200 p-4",
+              placeholder: "Tell us about your service interests.",
+            })
+          ),
+
+          e(
+            "button",
+            {
+              className:
+                "min-h-12 rounded-full bg-rotary-blue px-5 font-black text-white",
+            },
+            "Submit Interest Form"
+          )
+        ),
+
+        e(
+          "div",
+          { className: "mt-8 grid gap-3" },
+
+          faqs.map((faq, i) =>
+            e(
+              "div",
+              {
+                key: faq.question,
+                className: "rounded-xl bg-white",
+              },
+
+              e(
+                "button",
+                {
+                  className:
+                    "flex w-full items-center justify-between p-4 text-left font-black",
+                  onClick: () => setOpen(open === i ? -1 : i),
+                  "aria-expanded": open === i,
+                },
+                faq.question,
+                e("span", null, open === i ? "-" : "+")
+              ),
+
+              open === i &&
+                e(
+                  "p",
+                  {
+                    className: "px-4 pb-4 leading-7 text-slate-600",
+                  },
+                  faq.answer
+                )
+            )
+          )
+        )
+      )
     )
   );
 }
@@ -436,7 +701,7 @@ function Stories() {
     ["Youth", "Mentorship circles for emerging leaders", "Preparing young people with practical leadership habits."],
     ["Impact", "What transparent reporting builds", "Trust grows when communities can see the work clearly."],
   ];
-  return e("section", { id: "stories", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" }, e("div", { className: "mx-auto max-w-7xl" }, e(SectionHeading, { eyebrow: "News & stories", title: "Human-centered updates that make the club feel alive.", copy: "A responsive masonry-style story grid supports member spotlights, project reports, and community news." }), e("div", { className: "masonry" }, stories.map(([cat, title, copy], i) => e("article", { key: title, className: "overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft" }, e("img", { src: `https://images.unsplash.com/photo-${["1517048676732-d65bc937f952", "1556761175-b413da4baf72", "1529156069898-49953e39b3ac", "1551836022-d5d88e9218df"][i]}?auto=format&fit=crop&w=800&q=80`, alt: title, className: `w-full object-cover ${i % 2 ? "h-56" : "h-72"}`, loading: "lazy" }), e("div", { className: "p-5" }, e("span", { className: "text-xs font-black uppercase tracking-[0.18em] text-rotary-blue" }, cat), e("h3", { className: "mt-3 text-xl font-black" }, title), e("p", { className: "mt-3 leading-7 text-slate-600" }, copy), e("a", { href: "#", className: "mt-5 inline-flex font-black text-rotary-blue" })))))));
+  return e("section", { id: "stories", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" }, e("div", { className: "mx-auto max-w-7xl" }, e(SectionHeading, { eyebrow: "News & stories", title: "Human-centered updates that make the club feel alive.", copy: "Stay connected with the latest stories, service projects, milestones, and community impact from our club — showcasing the people, partnerships, and moments that bring our mission to life." }), e("div", { className: "masonry" }, stories.map(([cat, title, copy], i) => e("article", { key: title, className: "overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft" }, e("img", { src: `https://images.unsplash.com/photo-${["1517048676732-d65bc937f952", "1556761175-b413da4baf72", "1529156069898-49953e39b3ac", "1551836022-d5d88e9218df"][i]}?auto=format&fit=crop&w=800&q=80`, alt: title, className: `w-full object-cover ${i % 2 ? "h-56" : "h-72"}`, loading: "lazy" }), e("div", { className: "p-5" }, e("span", { className: "text-xs font-black uppercase tracking-[0.18em] text-rotary-blue" }, cat), e("h3", { className: "mt-3 text-xl font-black" }, title), e("p", { className: "mt-3 leading-7 text-slate-600" }, copy), e("a", { href: "#", className: "mt-5 inline-flex font-black text-rotary-blue" })))))));
 }
 
 function Footer() {
