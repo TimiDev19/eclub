@@ -296,7 +296,7 @@ function Navbar() {
 function Hero() {
   const highlights = [
     {
-      title: "Weekly Fellowships",
+      title: "Fortnightly Fellowships",
       description: "Designed for service-minded people ready to lead.",
     },
     {
@@ -336,7 +336,7 @@ function Hero() {
             className:
               "mb-4 inline-flex w-fit rounded-full border border-white/35 bg-white/12 px-4 py-2 text-sm font-bold backdrop-blur",
           },
-          "Newly chartered. Purpose built for impact."
+          "Purpose built for impact."
         ),
 
         e(
@@ -469,7 +469,7 @@ function About() {
           e(
             "p",
             { className: "mt-4 leading-8 text-slate-700" },
-            "Our vision is a vibrant club where fellowship fuels bold projects and every member can see, measure, and celebrate their impact."
+            "Together, we see a world where people unite and take action to create lasting change — across the globe, in our communities, and in ourselves."
           )
         ),
         e(
