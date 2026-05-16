@@ -526,11 +526,11 @@ function Team() {
       "Treasurer",
       "Finance professional championing transparent stewardship and donor confidence.",
     ],
-    [
-      "David Mensah",
-      "Membership Chair",
-      "Community connector helping service-minded professionals find their Rotary pathway.",
-    ],
+    // [
+    //   "David Mensah",
+    //   "Membership Chair",
+    //   "Community connector helping service-minded professionals find their Rotary pathway.",
+    // ],
   ];
   return e(
     "section",
@@ -561,7 +561,7 @@ function Team() {
                     "1500648767791-00dcc994a43e",
                     "1494790108377-be9c29b29330",
                     "1544005313-94ddf0286df2",
-                    "1507003211169-0a1dd7228f2d",
+                    // "1507003211169-0a1dd7228f2d",
                   ][i]
                 }?auto=format&fit=crop&w=300&q=80`,
                 alt: `${name}, ${role}`,
