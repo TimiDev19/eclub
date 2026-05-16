@@ -464,7 +464,7 @@ function About() {
           e(
             "p",
             { className: "mt-4 leading-8 text-slate-700" },
-            "To cultivate a trusted community of service leaders who create lasting improvements in education, health, environment, and youth empowerment."
+            "Our mission is to provide service to others, promote integrity, and advance world understanding, goodwill, and peace through our fellowship of business, professional, and community leaders"
           ),
           e(
             "p",
