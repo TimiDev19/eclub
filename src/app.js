@@ -165,7 +165,7 @@ function Navbar() {
               "grid h-11 place-items-center overflow-hidden",
           },
           e("img", {
-            src: "./public/img/club-logo.png",
+            src: "./img/club-logo.png",
             alt: "Rotary Logo",
             className: "h-11",
           })
