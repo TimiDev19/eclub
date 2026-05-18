@@ -1082,7 +1082,7 @@ function Footer() {
         e(
           "h2",
           { className: "text-2xl font-black" },
-          "Rotary eClub Of Connected Minds"
+          "Rotary E-Club Of Connected Minds, Nigeria"
         ),
         e(
           "p",
