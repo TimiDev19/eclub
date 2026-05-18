@@ -512,22 +512,37 @@ function Team() {
     [
       "Rtn Adebayo Taofeek Akande",
       "President",
-      "Strategy leader focused on partnerships, governance, and measurable community transformation.",
+      "Our Visionary—providing the direction, steering the board, and inspiring our club to reach new heights of service.",
     ],
     [
       "Rtn Amiomode Patience Ogunleye",
       "Secretary",
-      "Operations builder keeping meetings, records, and member communications crisp and dependable.",
+      "Our Anchor—tracking our course, managing the records, and keeping the operational gears of our club running smoothly.",
     ],
     [
       "Rtn Itunu Adesola Adeyemi",
       "Treasurer",
-      "Exemplary stewardship, transparency, and financial integrity",
+      "Our Guardian—securing our treasury, maintaining financial integrity, and ensuring our resources are maximized for good.",
     ],
     [
       "Rtn Esther Adesua Osime",
       "Service Projects Chair",
-      "Coordinates and supports community service initiatives, helping turn ideas into impactful projects through planning, collaboration, and hands-on leadership.",
+      "Our Architect—drafting the blueprints for community action and turning ideas into impactful local and global initiatives.",
+    ],
+    [
+      "Bosede Folashade Rotimi",
+      "Foundation Chair",
+      " Our Fuel—driving our global impact by connecting our club’s generosity with life-changing humanitarian grants.",
+    ],
+    [
+      "Temitope Peter Olumakinju",
+      "Membership Chair",
+      "Our Builder—assembling the team of diverse changemakers and laying the bricks of fellowship that keep us strong.",
+    ],
+    [
+      "Ronke Adeyanju",
+      "Public Image Chair",
+      "Our Storyteller—shining a light on our work and dynamically sharing our impact with the world.",
     ],
     // [
     //   "David Mensah",
@@ -543,8 +558,8 @@ function Team() {
       { className: "mx-auto max-w-7xl" },
       e(SectionHeading, {
         eyebrow: "Leadership",
-        title: "Credible leaders, approachable stewards.",
-        copy: "Our leadership team combines deep expertise with a people-first mindset, guiding the organization with integrity, transparency, and purpose. As approachable stewards, they foster trust, empower collaboration, and lead with a clear commitment to sustainable growth and shared success.",
+        title: "Meet our leadership team",
+        copy: "From the President’s vision to the Secretary's course and the Treasurer's treasury, our core guides the way. With our project Architect blueprinting action, the Foundation fueling the mission, and the Storyteller sharing our impact, the Membership Chair stands as our Builder, assembling the hands that change lives.",
       }),
       e(
         "div",
@@ -565,6 +580,9 @@ function Team() {
                     "ammies.png",
                     "sec.png",
                     "esther.png",
+                    "bose.jpg",
+                    "peter.jpg",
+                    "ronke.jpg",
                     // "1507003211169-0a1dd7228f2d",
                   ][i]
                 }?auto=format&fit=crop&w=300&q=80`,
@@ -1115,7 +1133,7 @@ function Footer() {
           e("br"),
           "+234 803 467 6789",
           e("br"),
-          "+234 806 977 6381",
+          "+234 806 977 6381"
         )
       ),
       e(
