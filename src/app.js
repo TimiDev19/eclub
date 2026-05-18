@@ -295,7 +295,7 @@ function Navbar() {
 function Hero() {
   const highlights = [
     {
-      title: "Fellowships",
+      title: "Fellowship",
       description: "Building strong friendships across the globe",
     },
     {
@@ -406,7 +406,7 @@ function About() {
     ],
     [
       "Leadership",
-      "Mentorship, public service, and ethical action in every project.",
+      "Mentorship, service, and ethical action in every project.",
       "check",
     ],
     [
