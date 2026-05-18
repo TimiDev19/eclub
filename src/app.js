@@ -430,7 +430,7 @@ function About() {
         eyebrow: "About the club",
         title:
           "A modern Rotary home for leaders who turn goodwill into action.",
-        copy: "Inspired by the structure and professionalism of established E-Clubs, Rotary E-Club of Connected Minds, Nigeria (District 9126) combines the traditional Rotary Club model with responsive digital engagement, partnerships and service projects to create lasting change.",
+        copy: "Inspired by the structure and professionalism of established E-Clubs, Rotary E-Club of Connected Minds, Nigeria (District 9126) combines the traditional Rotary Club model with responsive digital engagement, partnerships and service projects to create lasting change in our communities",
       }),
       e(
         "div",
