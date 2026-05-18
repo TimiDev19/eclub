@@ -554,10 +554,10 @@ function Team() {
               e("img", {
                 className:
                   "mx-auto h-28 w-28 rounded-full object-cover ring-4 ring-[#f7a81b]",
-                src: `https://images.unsplash.com/photo-${
+                src: `./img/${
                   [
-                    "1500648767791-00dcc994a43e",
-                    "1494790108377-be9c29b29330",
+                    "presi.png",
+                    "ammies.png",
                     "1544005313-94ddf0286df2",
                     // "1507003211169-0a1dd7228f2d",
                   ][i]
