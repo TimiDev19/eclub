@@ -598,33 +598,33 @@ function Team() {
 
 function Projects() {
   const stats = [
-    ["Volunteer Hours", "1,240"],
-    ["People Reached", "8,500"],
-    ["Projects Completed", "26"],
-    ["Funds Raised", "$84k"],
+    ["Volunteer Hours", "-"],
+    ["People Reached", "-"],
+    ["Projects Completed", "-"],
+    ["Funds Raised", "$0"],
   ];
-  const projects = [
-    [
-      "Education",
-      "Back-to-school kits",
-      "Equipping pupils with supplies, mentoring, and reading circles.",
-    ],
-    [
-      "Health",
-      "Community screening day",
-      "Preventive health checks delivered with clinical partners.",
-    ],
-    [
-      "Environment",
-      "Clean water advocacy",
-      "Awareness and cleanup drives supporting healthier neighborhoods.",
-    ],
-    [
-      "Youth Empowerment",
-      "Rotaract leadership lab",
-      "Career skills, ethics, and service design for young leaders.",
-    ],
-  ];
+  // const projects = [
+  //   [
+  //     "Education",
+  //     "Back-to-school kits",
+  //     "Equipping pupils with supplies, mentoring, and reading circles.",
+  //   ],
+  //   [
+  //     "Health",
+  //     "Community screening day",
+  //     "Preventive health checks delivered with clinical partners.",
+  //   ],
+  //   [
+  //     "Environment",
+  //     "Clean water advocacy",
+  //     "Awareness and cleanup drives supporting healthier neighborhoods.",
+  //   ],
+  //   [
+  //     "Youth Empowerment",
+  //     "Rotaract leadership lab",
+  //     "Career skills, ethics, and service design for young leaders.",
+  //   ],
+  // ];
   return e(
     "section",
     { id: "projects", className: "section-pad bg-white px-4 sm:px-6 lg:px-8" },
@@ -651,51 +651,51 @@ function Projects() {
           )
         )
       ),
-      e(
-        "div",
-        {
-          className:
-            "no-scrollbar mt-8 flex snap-x gap-5 overflow-x-auto pb-3 lg:grid lg:grid-cols-4 lg:overflow-visible",
-        },
-        projects.map(([cat, title, copy], i) =>
-          e(
-            "article",
-            {
-              key: title,
-              className:
-                "min-w-[82vw] snap-start overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft sm:min-w-[45vw] lg:min-w-0",
-            },
-            e("img", {
-              src: `https://images.unsplash.com/photo-${
-                [
-                  "1488521787991-ed7bbaae773c",
-                  "1576091160550-2173dba999ef",
-                  "1532601224476-15c79f2f7a51",
-                  "1522202176988-66273c2fd55f",
-                ][i]
-              }?auto=format&fit=crop&w=700&q=80`,
-              alt: title,
-              className: "h-48 w-full object-cover",
-              loading: "lazy",
-            }),
-            e(
-              "div",
-              { className: "p-5" },
-              e(
-                "span",
-                {
-                  className:
-                    "rounded-full bg-[#f7a81b] px-3 py-1 text-xs font-black text-rotary-ink",
-                },
-                cat
-              ),
-              e("h3", { className: "mt-4 text-xl font-black" }, title),
-              e("p", { className: "mt-3 leading-7 text-slate-600" }, copy)
-              // e("a", { href: "#donate", className: "mt-5 inline-flex font-black text-[#17458f]" }, "Support this project")
-            )
-          )
-        )
-      )
+      // e(
+      //   "div",
+      //   {
+      //     className:
+      //       "no-scrollbar mt-8 flex snap-x gap-5 overflow-x-auto pb-3 lg:grid lg:grid-cols-4 lg:overflow-visible",
+      //   },
+      //   projects.map(([cat, title, copy], i) =>
+      //     e(
+      //       "article",
+      //       {
+      //         key: title,
+      //         className:
+      //           "min-w-[82vw] snap-start overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft sm:min-w-[45vw] lg:min-w-0",
+      //       },
+      //       e("img", {
+      //         src: `https://images.unsplash.com/photo-${
+      //           [
+      //             "1488521787991-ed7bbaae773c",
+      //             "1576091160550-2173dba999ef",
+      //             "1532601224476-15c79f2f7a51",
+      //             "1522202176988-66273c2fd55f",
+      //           ][i]
+      //         }?auto=format&fit=crop&w=700&q=80`,
+      //         alt: title,
+      //         className: "h-48 w-full object-cover",
+      //         loading: "lazy",
+      //       }),
+      //       e(
+      //         "div",
+      //         { className: "p-5" },
+      //         e(
+      //           "span",
+      //           {
+      //             className:
+      //               "rounded-full bg-[#f7a81b] px-3 py-1 text-xs font-black text-rotary-ink",
+      //           },
+      //           cat
+      //         ),
+      //         e("h3", { className: "mt-4 text-xl font-black" }, title),
+      //         e("p", { className: "mt-3 leading-7 text-slate-600" }, copy)
+      //         // e("a", { href: "#donate", className: "mt-5 inline-flex font-black text-[#17458f]" }, "Support this project")
+      //       )
+      //     )
+      //   )
+      // )
     )
   );
 }
