@@ -702,9 +702,9 @@ function Projects() {
 
 function Events() {
   const events = [
-    ["11", "May", "Planning Meeting", "Virtual", "Sunday, 19:00 (WAT)"],
-    ["13", "May", "Onboarding Meeting", "Virtual", "Saturday, 19:00 (WAT)"],
-    ["24", "May", "Inaugural Fellowship", "Virtual", "Sunday, 19:00 (WAT)"],
+    ["11", "May", "Planning Meeting", "Virtual", "Sunday, 20:00 (WAT)"],
+    ["13", "May", "Onboarding Meeting", "Virtual", "Saturday, 20:00 (WAT)"],
+    ["24", "May", "Inaugural Fellowship", "Virtual", "Sunday, 20:00 (WAT)"],
   ];
   return e(
     "section",
@@ -1087,7 +1087,7 @@ function Footer() {
         e(
           "p",
           { className: "mt-4 max-w-lg leading-7 text-white/70" },
-          "Meeting on fortnightly Sundays (19:00 WAT) online to advance fellowship, leadership, and community impact."
+          "Meeting on fortnightly Sundays (20:00 WAT) online to advance fellowship, leadership, and community impact."
         ),
         e("form", {
           className: "mt-6 flex max-w-md gap-2",
