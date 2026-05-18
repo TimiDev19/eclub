@@ -430,7 +430,7 @@ function About() {
         eyebrow: "About the club",
         title:
           "A modern Rotary home for leaders who turn goodwill into action.",
-        copy: "Inspired by the structure and professionalism of established eClubs, this new club combines Rotary tradition with responsive digital engagement, clear governance, and service programs people can trust.",
+        copy: "Inspired by the structure and professionalism of established E-Clubs, Rotary E-Club of Connected Minds, Nigeria combines the traditional Rotary Club model with responsive digital engagement, partnerships and service projects to create lasting change.",
       }),
       e(
         "div",
@@ -474,10 +474,10 @@ function About() {
           "ol",
           { className: "grid gap-4" },
           [
-            "Charter launch and member onboarding",
-            "First community needs assessment",
-            "Signature education and health projects",
-            "District partnerships and annual impact report",
+            "Is it the TRUTH?",
+            "Is it FAIR to all concerned?",
+            "Will it build GOODWILL and BETTER FRIENDSHIPS?",
+            "Will it be BENEFICIAL to all concerned?",
           ].map((item, i) =>
             e(
               "li",
@@ -522,7 +522,7 @@ function Team() {
     [
       "Rtn Itunu Adesola Adeyemi",
       "Treasurer",
-      "Finance professional championing transparent stewardship and donor confidence.",
+      "Exemplary stewardship, transparency, and financial integrity",
     ],
     // [
     //   "David Mensah",
@@ -707,16 +707,16 @@ function Events() {
       "May",
       "Charter Fellowship & Induction",
       "Virtual",
-      "Sunday, 18:00",
+      "Sunday, 19:00 (WAT)",
     ],
     [
       "13",
       "June",
       "Health Outreach Planning Session",
       "Virtual",
-      "Saturday, 18:00",
+      "Saturday, 19:00 (WAT)",
     ],
-    ["27", "June", "Community Service Day", "Virtual", "Sunday, 18:00"],
+    ["27", "June", "Community Service Day", "Virtual", "Sunday, 19:00 (WAT)"],
   ];
   return e(
     "section",
@@ -1098,7 +1098,7 @@ function Footer() {
         e(
           "p",
           { className: "mt-4 max-w-lg leading-7 text-white/70" },
-          "Meeting weekly online to advance fellowship, leadership, and community impact."
+          "Meeting on fortnightly Sundays (19:00 WAT) online to advance fellowship, leadership, and community impact."
         ),
         e("form", {
           className: "mt-6 flex max-w-md gap-2",
@@ -1114,9 +1114,9 @@ function Footer() {
           { className: "mt-4 leading-7 text-white/70" },
           "Worldwide",
           e("br"),
-          "hello@rotaryclub.example",
+          "rotaryeclubofconnectedminds@gmail.com",
           e("br"),
-          "+234 000 000 0000"
+          "+234 806 862 3066"
         )
       ),
       e(
