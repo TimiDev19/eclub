@@ -1163,7 +1163,7 @@ function Footer() {
         className:
           "mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/55",
       },
-      `Copyright ${new Date().getFullYear()} Rotary eClub Of Connected Minds. Designed and built by Oluwatimilehin Rotimi.`
+      `Copyright ${new Date().getFullYear()} Rotary E-Club of Connected Minds, Nigeria. Designed and built by Oluwatimilehin Rotimi.`
     )
   );
 }
