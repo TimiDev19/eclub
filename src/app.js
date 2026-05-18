@@ -1016,7 +1016,7 @@ function Stories() {
         eyebrow: "News & stories",
         title: "Human-centered updates that make the club feel alive.",
         copy: "Stay connected with the latest stories, service projects, milestones, and community impact from our club, District 9126 and Rotary International — showcasing the people, partnerships, and moments that bring our mission to life.",
-      }),
+      })
       // e(
       //   "div",
       //   { className: "masonry" },
@@ -1104,6 +1104,12 @@ function Footer() {
           "Worldwide",
           e("br"),
           "rotaryeclubofconnectedminds@gmail.com",
+          e("br"),
+          "+234 806 862 3066",
+          e("br"),
+          "+234 803 467 6789",
+          e("br"),
+          "+234 806 977 6381",
           e("br"),
           "+234 806 862 3066"
         )
