@@ -558,7 +558,7 @@ function Team() {
                   [
                     "presi.png",
                     "ammies.png",
-                    "1544005313-94ddf0286df2",
+                    "sec.png",
                     // "1507003211169-0a1dd7228f2d",
                   ][i]
                 }?auto=format&fit=crop&w=300&q=80`,
@@ -1082,7 +1082,7 @@ function Footer() {
         e(
           "h2",
           { className: "text-2xl font-black" },
-          "Rotary E-Club Of Connected Minds, Nigeria"
+          "Rotary E-Club of Connected Minds, Nigeria"
         ),
         e(
           "p",
