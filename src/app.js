@@ -806,7 +806,7 @@ function Membership() {
     {
       question: "How often does the club meet?",
       answer:
-        "The club meets three times a month for fellowship, networking, and service activities, with schedules designed to accommodate professionals and business leaders.",
+        "The club meets fortnightly for fellowship, networking, and service activities, with schedules designed to accommodate professionals and business leaders.",
     },
     {
       question: "Can busy professionals join?",
@@ -1093,7 +1093,7 @@ function Footer() {
         e(
           "p",
           { className: "mt-4 max-w-lg leading-7 text-white/70" },
-          "Meeting on fortnightly Sundays (20:00 WAT) online to advance fellowship, leadership, and community impact."
+          "Meeting fortnightly Sundays (20:00 WAT) online to advance fellowship, leadership, and community impact."
         ),
         e("form", {
           className: "mt-6 flex max-w-md gap-2",
