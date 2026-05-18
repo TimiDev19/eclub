@@ -524,6 +524,11 @@ function Team() {
       "Treasurer",
       "Exemplary stewardship, transparency, and financial integrity",
     ],
+    [
+      "Rtn Esther Adesua Osime",
+      "Service Projects Chair",
+      "Coordinates and supports community service initiatives, helping turn ideas into impactful projects through planning, collaboration, and hands-on leadership.",
+    ],
     // [
     //   "David Mensah",
     //   "Membership Chair",
@@ -559,6 +564,7 @@ function Team() {
                     "presi.png",
                     "ammies.png",
                     "sec.png",
+                    "esther.png",
                     // "1507003211169-0a1dd7228f2d",
                   ][i]
                 }?auto=format&fit=crop&w=300&q=80`,
