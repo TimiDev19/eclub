@@ -430,7 +430,7 @@ function About() {
         eyebrow: "About the club",
         title:
           "A modern Rotary home for leaders who turn goodwill into action.",
-        copy: "Inspired by the structure and professionalism of established E-Clubs, Rotary E-Club of Connected Minds, Nigeria combines the traditional Rotary Club model with responsive digital engagement, partnerships and service projects to create lasting change.",
+        copy: "Inspired by the structure and professionalism of established E-Clubs, Rotary E-Club of Connected Minds, Nigeria (District 9126) combines the traditional Rotary Club model with responsive digital engagement, partnerships and service projects to create lasting change.",
       }),
       e(
         "div",
@@ -650,7 +650,7 @@ function Projects() {
             e("p", { className: "mt-2 text-sm font-bold text-white/80" }, label)
           )
         )
-      ),
+      )
       // e(
       //   "div",
       //   {
@@ -702,21 +702,9 @@ function Projects() {
 
 function Events() {
   const events = [
-    [
-      "30",
-      "May",
-      "Charter Fellowship & Induction",
-      "Virtual",
-      "Sunday, 19:00 (WAT)",
-    ],
-    [
-      "13",
-      "June",
-      "Health Outreach Planning Session",
-      "Virtual",
-      "Saturday, 19:00 (WAT)",
-    ],
-    ["27", "June", "Community Service Day", "Virtual", "Sunday, 19:00 (WAT)"],
+    ["11", "May", "Planning Meeting", "Virtual", "Sunday, 19:00 (WAT)"],
+    ["13", "May", "Onboarding Meeting", "Virtual", "Saturday, 19:00 (WAT)"],
+    ["24", "May", "Inaugural Fellowship", "Virtual", "Sunday, 19:00 (WAT)"],
   ];
   return e(
     "section",
@@ -851,10 +839,11 @@ function Membership() {
           "div",
           { className: "grid gap-4" },
           [
-            "Attend an open fellowship",
-            "Meet the membership committee",
-            "Choose a service area",
-            "Complete onboarding and induction",
+            "Indicate interest",
+            "Attend a fellowship",
+            "Interact with the Membership Committee",
+            "Complete on-boarding",
+            "Induction",
           ].map((step, i) =>
             e(
               "div",
@@ -1026,53 +1015,53 @@ function Stories() {
       e(SectionHeading, {
         eyebrow: "News & stories",
         title: "Human-centered updates that make the club feel alive.",
-        copy: "Stay connected with the latest stories, service projects, milestones, and community impact from our club — showcasing the people, partnerships, and moments that bring our mission to life.",
+        copy: "Stay connected with the latest stories, service projects, milestones, and community impact from our club, District 9126 and Rotary International — showcasing the people, partnerships, and moments that bring our mission to life.",
       }),
-      e(
-        "div",
-        { className: "masonry" },
-        stories.map(([cat, title, copy], i) =>
-          e(
-            "article",
-            {
-              key: title,
-              className:
-                "overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft",
-            },
-            e("img", {
-              src: `https://images.unsplash.com/photo-${
-                [
-                  "1517048676732-d65bc937f952",
-                  "1556761175-b413da4baf72",
-                  "1529156069898-49953e39b3ac",
-                  "1551836022-d5d88e9218df",
-                ][i]
-              }?auto=format&fit=crop&w=800&q=80`,
-              alt: title,
-              className: `w-full object-cover ${i % 2 ? "h-56" : "h-72"}`,
-              loading: "lazy",
-            }),
-            e(
-              "div",
-              { className: "p-5" },
-              e(
-                "span",
-                {
-                  className:
-                    "text-xs font-black uppercase tracking-[0.18em] text-[#17458f]",
-                },
-                cat
-              ),
-              e("h3", { className: "mt-3 text-xl font-black" }, title),
-              e("p", { className: "mt-3 leading-7 text-slate-600" }, copy),
-              e("a", {
-                href: "#",
-                className: "mt-5 inline-flex font-black text-[#17458f]",
-              })
-            )
-          )
-        )
-      )
+      // e(
+      //   "div",
+      //   { className: "masonry" },
+      //   stories.map(([cat, title, copy], i) =>
+      //     e(
+      //       "article",
+      //       {
+      //         key: title,
+      //         className:
+      //           "overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft",
+      //       },
+      //       e("img", {
+      //         src: `https://images.unsplash.com/photo-${
+      //           [
+      //             "1517048676732-d65bc937f952",
+      //             "1556761175-b413da4baf72",
+      //             "1529156069898-49953e39b3ac",
+      //             "1551836022-d5d88e9218df",
+      //           ][i]
+      //         }?auto=format&fit=crop&w=800&q=80`,
+      //         alt: title,
+      //         className: `w-full object-cover ${i % 2 ? "h-56" : "h-72"}`,
+      //         loading: "lazy",
+      //       }),
+      //       e(
+      //         "div",
+      //         { className: "p-5" },
+      //         e(
+      //           "span",
+      //           {
+      //             className:
+      //               "text-xs font-black uppercase tracking-[0.18em] text-[#17458f]",
+      //           },
+      //           cat
+      //         ),
+      //         e("h3", { className: "mt-3 text-xl font-black" }, title),
+      //         e("p", { className: "mt-3 leading-7 text-slate-600" }, copy),
+      //         e("a", {
+      //           href: "#",
+      //           className: "mt-5 inline-flex font-black text-[#17458f]",
+      //         })
+      //       )
+      //     )
+      //   )
+      // )
     )
   );
 }
