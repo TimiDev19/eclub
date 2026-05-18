@@ -349,7 +349,7 @@ function Hero() {
             className:
               "mt-5 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl",
           },
-          "A leadership-centered Rotary Club mobilizing professionals, partners, and neighbors to solve real community challenges with dignity, fellowship, and measurable service."
+          "A leadership- centered, community service driven Rotary Club, mobilizing professionals and business men/women to create lasting impact in our communities and across the globe."
         ),
 
         e(
@@ -703,20 +703,20 @@ function Projects() {
 function Events() {
   const events = [
     [
-      "24",
+      "30",
       "May",
       "Charter Fellowship & Induction",
       "Virtual",
-      "Saturday, 10:00 AM",
+      "Sunday, 18:00",
     ],
     [
-      "31",
-      "May",
+      "13",
+      "June",
       "Health Outreach Planning Session",
       "Virtual",
-      "Saturday, 6:00 PM",
+      "Saturday, 18:00",
     ],
-    ["07", "Jun", "Community Service Day", "Virtual", "Saturday, 8:30 AM"],
+    ["27", "June", "Community Service Day", "Virtual", "Sunday, 18:00"],
   ];
   return e(
     "section",
