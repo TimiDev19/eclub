@@ -129,7 +129,7 @@ function Navbar() {
         href: `#${id}`,
         onClick: () => setOpen(false),
         className: `rounded-full px-3 py-2 text-sm font-bold ${
-          scrolled ? "black" : "text-white"
+          scrolled ? "black" : "black"
         } transition hover:bg-rotary-mist hover:text-[#17458f]`,
       },
       label
@@ -142,7 +142,7 @@ function Navbar() {
       className: `fixed inset-x-0 top-0 z-50 transition ${
         scrolled
           ? "bg-white/95 shadow-sm backdrop-blur"
-          : "bg-slate-300/50 backdrop-blur"
+          : "bg-white/95 backdrop-blur"
       }`,
     },
     e(
@@ -201,7 +201,7 @@ function Navbar() {
           className: `grid h-11 w-11 place-items-center rounded-full border ${
             scrolled
               ? "text-rotary-ink border-rotary-ink"
-              : "text-white border-slate-200"
+              : "text-rotary-ink border-rotary-ink"
           }  lg:hidden`,
           onClick: () => setOpen(true),
           "aria-label": "Open navigation menu",
@@ -229,7 +229,7 @@ function Navbar() {
               exit: { x: "100%" },
               transition: { type: "spring", damping: 28, stiffness: 260 },
               className: `ml-auto min-h-screen w-[86vw] max-w-sm ${
-                scrolled ? "bg-white" : "bg-slate-400"
+                scrolled ? "bg-white" : "bg-white"
               }  p-5 shadow-soft`,
             },
             e(
@@ -295,13 +295,13 @@ function Navbar() {
 function Hero() {
   const highlights = [
     {
-      title: "Fortnightly Fellowships",
+      title: "Fellowships",
       description: "Building strong friendships across the globe",
     },
     {
       title: "Service Projects",
       description:
-        "Creating lasting impact through sustainable Community based service projects ",
+        "Creating lasting impact through sustainable community based service projects ",
     },
     {
       title: "Leadership",
