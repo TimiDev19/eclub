@@ -142,7 +142,7 @@ function Navbar() {
       className: `fixed inset-x-0 top-0 z-50 transition ${
         scrolled
           ? "bg-white/95 shadow-sm backdrop-blur"
-          : "bg-white/82 backdrop-blur"
+          : "bg-slate-300/50 backdrop-blur"
       }`,
     },
     e(
@@ -161,15 +161,14 @@ function Navbar() {
         e(
           "span",
           {
-            className:
-              "grid h-11 place-items-center overflow-hidden",
+            className: "grid h-11 place-items-center overflow-hidden",
           },
           e("img", {
             src: "./img/club-logo.png",
             alt: "Rotary Logo",
             className: "h-11",
           })
-        ),
+        )
         // e(
         //   "span",
         //   { className: `leading-tight ${scrolled ? "" : "text-white"}` },
@@ -297,17 +296,16 @@ function Hero() {
   const highlights = [
     {
       title: "Fortnightly Fellowships",
-      description: "Designed for service-minded people ready to lead.",
+      description: "Building strong friendships across the globe",
     },
     {
-      title: "Transparent Projects",
+      title: "Service Projects",
       description:
-        "Built on accountability, visibility, and measurable community impact.",
+        "Creating lasting impact through sustainable Community based service projects ",
     },
     {
-      title: "Youth Leadership",
-      description:
-        "Empowering the next generation of leaders through mentorship, service, and growth opportunities.",
+      title: "Leadership",
+      description: "Developing strategic leadership skills and mentorship",
     },
   ];
 
@@ -732,7 +730,7 @@ function Events() {
       e(SectionHeading, {
         eyebrow: "Events & meetings",
         title: "Easy ways to show up, serve, and belong.",
-        copy: "Meeting badges, RSVP actions, and calendar-style cards are optimized for mobile taps.",
+        copy: "We meet fortnightly on Sundays",
       }),
       e(
         "div",
@@ -1128,19 +1126,17 @@ function Footer() {
         e(
           "div",
           { className: "mt-4 grid gap-2" },
-          navItems
-            .slice(1)
-            .map(([label, id]) =>
-              e(
-                "a",
-                {
-                  key: id,
-                  href: `#${id}`,
-                  className: "text-white/70 hover:text-white",
-                },
-                label
-              )
+          navItems.slice(1).map(([label, id]) =>
+            e(
+              "a",
+              {
+                key: id,
+                href: `#${id}`,
+                className: "text-white/70 hover:text-white",
+              },
+              label
             )
+          )
         )
       )
     ),
